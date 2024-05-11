@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BibliotecaDSM</string>
+    <string name="recursos">RecursosDSM</string>
+    <string name="Programacion">Programming</string>
+    <string name="Titulo">Biblioteca DSM</string>
+    <string name="CyberSecurity">CyberSecurity</string>
+    <string name="InteligenciaArtificial">Artificial Intelligence</string>
+    <string name="back">back</string>
 </resources>
