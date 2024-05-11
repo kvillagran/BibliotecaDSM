@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1063581075716",
+    "project_id": "recursosdsm-bf4ef",
+    "storage_bucket": "recursosdsm-bf4ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063581075716:android:12eace53fe64db8dc1a851",
+        "android_client_info": {
+          "package_name": "com.example.bibliotecadsm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYsH4pKZ5tEjU7WUC4Omyd_BY6t_NNQps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
