@@ -1,8 +1,8 @@
 <h1>BIBLIOTECA DSM</h1>
 
 <p>
-Aplicación desarrollada en lenguaje Kotlin y Android Studio, que proporciona la visualizacion de Material educativo sobre ingenieria en informatica 
-como videos, tutoriales, noticias, blogs y curos online sobre temas relacionadios a seguridad informatica, desarrollo e inteligencia artificial.
+Aplicación desarrollada en lenguaje Kotlin y Android Studio, que proporciona la visualización de Material educativo sobre ingeniería en informática 
+como videos, tutoriales, noticias, blogs y cursos online sobre temas relacionadios a seguridad informática, desarrollo e inteligencia artificial.
 </p>
 
 <h2>Video Demostrativo 🛠️</h2>
