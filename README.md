@@ -5,7 +5,7 @@ Aplicación desarrollada en lenguaje Kotlin y Android Studio, que proporciona la
 como videos, tutoriales, noticias, blogs y curos online sobre temas relacionadios a seguridad informatica, desarrollo e inteligencia artificial.
 </p>
 
-<h2>Video 🛠️</h2>
+<h2>Video Demostrativo 🛠️</h2>
 <ul>
   <li><A HREF="https://drive.google.com/file/d/1BE1HRa5rTIQc9wX0lJrvTvWj8NnLGd_m/view?usp=sharing">DRIVE</A></li>
 </ul>
