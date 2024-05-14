@@ -7,7 +7,7 @@ como videos, tutoriales, noticias, blogs y cursos online sobre temas relacionadi
 
 <h2>Video Demostrativo 🛠️</h2>
 <ul>
-  <li><A HREF="https://drive.google.com/file/d/1BE1HRa5rTIQc9wX0lJrvTvWj8NnLGd_m/view?usp=sharing](https://drive.google.com/file/d/1fzGA5FcWW5r0e32OJzXnrpbZkp8Jdaea/view?usp=drive_link](https://drive.google.com/file/d/1fzGA5FcWW5r0e32OJzXnrpbZkp8Jdaea/view?usp=sharing">DRIVE</A></li>
+  <li><A HREF="https://drive.google.com/file/d/1fzGA5FcWW5r0e32OJzXnrpbZkp8Jdaea/view?usp=drive_link">DRIVE</A></li>
 </ul>
 
 <h2>Guía de Usuario 🛠️</h2>
