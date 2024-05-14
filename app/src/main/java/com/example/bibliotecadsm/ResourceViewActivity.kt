@@ -22,7 +22,6 @@ class ResourceViewActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resource_view)
 
@@ -31,17 +30,34 @@ class ResourceViewActivity : AppCompatActivity() {
             finish()
         }
 
+        // Mostrar Toast de bienvenida
+        showWelcomeToast(category)
+
+        // Inicializar vistas
+        initViews()
+
+        // evento de clic para el botón de retorno
+        setupReturnButtonClickListener()
+
+        // Configurar la base de datos
+        setupDatabase(category)
+    }
+
+    private fun initViews() {
         btnReturn = findViewById(R.id.btnReturn)
         recyclerView = findViewById(R.id.recyclerViewResources)
         recyclerView.layoutManager = LinearLayoutManager(this)
+    }
 
-
+    private fun setupReturnButtonClickListener() {
         btnReturn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
+    }
 
+    private fun setupDatabase(category: String) {
         try {
             database = FirebaseDatabase.getInstance().getReference("BibliotecaDSM").child(category)
         } catch (e: Exception) {
@@ -50,6 +66,7 @@ class ResourceViewActivity : AppCompatActivity() {
             finish()
         }
 
+        // Añadiendo escuchador para cambios en la base de datos
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (!snapshot.exists()) {
@@ -73,4 +90,16 @@ class ResourceViewActivity : AppCompatActivity() {
             }
         })
     }
+
+    private fun showWelcomeToast(category: String) {
+        val message = when (category) {
+            "Programming" -> "Welcome to Programming content"
+            "CyberSecurity" -> "Welcome to Cybersecurity content"
+            "IA" -> "Welcome to Artificial Intelligence content"
+            else -> "Welcome"
+        }
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
 }
+
+

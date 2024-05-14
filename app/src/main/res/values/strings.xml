@@ -6,4 +6,8 @@
     <string name="CyberSecurity">CyberSecurity</string>
     <string name="InteligenciaArtificial">Artificial Intelligence</string>
     <string name="back">back</string>
+    <string name="openlink">Abrir Link</string>
+    <string name="tiporecurso">Tipo de recurso</string>
+    <string name="titulorecurso">Titulo del recurso</string>
+    <string name="descRecurso">Descripción extensa del recurso. Más detalles y información.</string>
 </resources>

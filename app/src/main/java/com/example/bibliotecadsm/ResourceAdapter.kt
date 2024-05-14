@@ -43,3 +43,4 @@ class ResourceAdapter(private val resourcesList: List<EducationalResource>) : Re
     override fun getItemCount() = resourcesList.size
 }
 
+

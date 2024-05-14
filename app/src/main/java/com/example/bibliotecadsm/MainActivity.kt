@@ -15,27 +15,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Inicializando botones
+        initButtons()
+
+        // Configurando eventos de clic
+        setupButtonClickListeners()
+    }
+
+    private fun initButtons() {
         btnCode = findViewById(R.id.btnCode)
         btnSecurity = findViewById(R.id.btnSecurity)
         btnIA = findViewById(R.id.btnIA)
+    }
 
-        btnCode.setOnClickListener {
-            startActivity(Intent(this@MainActivity, ResourceViewActivity::class.java).apply {
-                putExtra("category", "Programming")
-            })
+    private fun setupButtonClickListeners() {
+        btnCode.setOnClickListener { navigateToResourceView("Programming") }
+        btnSecurity.setOnClickListener { navigateToResourceView("CyberSecurity") }
+        btnIA.setOnClickListener { navigateToResourceView("IA") }
+    }
+
+    private fun navigateToResourceView(category: String) {
+        val intent = Intent(this@MainActivity, ResourceViewActivity::class.java).apply {
+            putExtra("category", category)
         }
-
-        btnSecurity.setOnClickListener {
-            startActivity(Intent(this@MainActivity, ResourceViewActivity::class.java).apply {
-                putExtra("category", "CyberSecurity")
-            })
-        }
-
-        btnIA.setOnClickListener {
-            startActivity(Intent(this@MainActivity, ResourceViewActivity::class.java).apply {
-                putExtra("category", "IA")
-            })
-        }
-
+        startActivity(intent)
     }
 }

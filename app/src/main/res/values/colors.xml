@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="primary">#ACE1AF</color>
+    <color name="button">#3F51B5</color>
     <color name="secondary">#FFFFFF</color>
     <color name="transparent">#00000000</color>
 </resources>
